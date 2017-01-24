@@ -14,5 +14,11 @@
 		<key>title</key>
 		<string>Images</string>
 	</dict>
+	<dict>
+		<key>segue</key>
+		<string>TextSizeViewSegue</string>
+		<key>title</key>
+		<string>Text Size</string>
+	</dict>
 </array>
 </plist>
