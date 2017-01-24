@@ -3,10 +3,14 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>segue</key>
+		<string>HeadingsViewSegue</string>
 		<key>title</key>
 		<string>Headings</string>
 	</dict>
 	<dict>
+		<key>segue</key>
+		<string>ImagesViewSegue</string>
 		<key>title</key>
 		<string>Images</string>
 	</dict>

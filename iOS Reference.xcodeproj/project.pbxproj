@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52BC52551E37A9C800D74DE1 /* AFBImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BC52541E37A9C800D74DE1 /* AFBImagesViewController.m */; };
+		52BC52571E37C95F00D74DE1 /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52BC52561E37C95F00D74DE1 /* Strings.strings */; };
+		52CC11D51E36A46500C52B01 /* AFBHeadingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC11D41E36A46500C52B01 /* AFBHeadingsViewController.m */; };
 		52F7FEE61E365EE600C17147 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F7FEE51E365EE600C17147 /* main.m */; };
 		52F7FEE91E365EE600C17147 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F7FEE81E365EE600C17147 /* AppDelegate.m */; };
 		52F7FEEC1E365EE600C17147 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F7FEEB1E365EE600C17147 /* MasterViewController.m */; };
@@ -18,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52BC52531E37A9C800D74DE1 /* AFBImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBImagesViewController.h; sourceTree = "<group>"; };
+		52BC52541E37A9C800D74DE1 /* AFBImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBImagesViewController.m; sourceTree = "<group>"; };
+		52BC52561E37C95F00D74DE1 /* Strings.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Strings.strings; sourceTree = "<group>"; };
+		52CC11D31E36A46500C52B01 /* AFBHeadingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBHeadingsViewController.h; sourceTree = "<group>"; };
+		52CC11D41E36A46500C52B01 /* AFBHeadingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBHeadingsViewController.m; sourceTree = "<group>"; };
 		52F7FEE11E365EE600C17147 /* iOS Reference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Reference.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F7FEE51E365EE600C17147 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52F7FEE71E365EE600C17147 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,6 +52,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52CC11D21E36A42B00C52B01 /* Reference Views */ = {
+			isa = PBXGroup;
+			children = (
+				52CC11D31E36A46500C52B01 /* AFBHeadingsViewController.h */,
+				52CC11D41E36A46500C52B01 /* AFBHeadingsViewController.m */,
+				52BC52531E37A9C800D74DE1 /* AFBImagesViewController.h */,
+				52BC52541E37A9C800D74DE1 /* AFBImagesViewController.m */,
+			);
+			name = "Reference Views";
+			sourceTree = "<group>";
+		};
 		52F7FED81E365EE600C17147 = {
 			isa = PBXGroup;
 			children = (
@@ -69,12 +88,14 @@
 				52F7FEEB1E365EE600C17147 /* MasterViewController.m */,
 				52F7FEED1E365EE600C17147 /* DetailViewController.h */,
 				52F7FEEE1E365EE600C17147 /* DetailViewController.m */,
+				52CC11D21E36A42B00C52B01 /* Reference Views */,
 				52F7FEF01E365EE600C17147 /* Main.storyboard */,
 				52F7FEF31E365EE600C17147 /* Assets.xcassets */,
 				52F7FEF51E365EE600C17147 /* LaunchScreen.storyboard */,
 				52F7FEF81E365EE600C17147 /* Info.plist */,
 				52F7FEE41E365EE600C17147 /* Supporting Files */,
 				52F7FEFE1E367F5800C17147 /* ReferenceItems.plist */,
+				52BC52561E37C95F00D74DE1 /* Strings.strings */,
 			);
 			path = "iOS Reference";
 			sourceTree = "<group>";
@@ -149,6 +170,7 @@
 				52F7FEF71E365EE600C17147 /* LaunchScreen.storyboard in Resources */,
 				52F7FEF41E365EE600C17147 /* Assets.xcassets in Resources */,
 				52F7FEF21E365EE600C17147 /* Main.storyboard in Resources */,
+				52BC52571E37C95F00D74DE1 /* Strings.strings in Resources */,
 				52F7FEFF1E367F5800C17147 /* ReferenceItems.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,7 +184,9 @@
 			files = (
 				52F7FEE91E365EE600C17147 /* AppDelegate.m in Sources */,
 				52F7FEEC1E365EE600C17147 /* MasterViewController.m in Sources */,
+				52CC11D51E36A46500C52B01 /* AFBHeadingsViewController.m in Sources */,
 				52F7FEE61E365EE600C17147 /* main.m in Sources */,
+				52BC52551E37A9C800D74DE1 /* AFBImagesViewController.m in Sources */,
 				52F7FEEF1E365EE600C17147 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +346,7 @@
 				52F7FEFD1E365EE600C17147 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
