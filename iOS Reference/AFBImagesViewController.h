@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AFBImagesViewController : UIViewController
-
+@property (nonatomic, weak) IBOutlet UIImageView *correctImage;
+@property (nonatomic, weak) IBOutlet UIImageView *incorrectImage;
 @end

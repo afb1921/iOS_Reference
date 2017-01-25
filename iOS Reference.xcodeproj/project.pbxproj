@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52197FC21E391CA6005A85D1 /* AFBTextSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52197FC11E391CA6005A85D1 /* AFBTextSizeViewController.m */; };
+		52197FC51E3944E0005A85D1 /* AFBFieldLabelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52197FC41E3944E0005A85D1 /* AFBFieldLabelsViewController.m */; };
 		52BC52551E37A9C800D74DE1 /* AFBImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BC52541E37A9C800D74DE1 /* AFBImagesViewController.m */; };
 		52BC52571E37C95F00D74DE1 /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52BC52561E37C95F00D74DE1 /* Strings.strings */; };
 		52CC11D51E36A46500C52B01 /* AFBHeadingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC11D41E36A46500C52B01 /* AFBHeadingsViewController.m */; };
@@ -21,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52197FC01E391CA6005A85D1 /* AFBTextSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBTextSizeViewController.h; sourceTree = "<group>"; };
+		52197FC11E391CA6005A85D1 /* AFBTextSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBTextSizeViewController.m; sourceTree = "<group>"; };
+		52197FC31E3944E0005A85D1 /* AFBFieldLabelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBFieldLabelsViewController.h; sourceTree = "<group>"; };
+		52197FC41E3944E0005A85D1 /* AFBFieldLabelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBFieldLabelsViewController.m; sourceTree = "<group>"; };
 		52BC52531E37A9C800D74DE1 /* AFBImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBImagesViewController.h; sourceTree = "<group>"; };
 		52BC52541E37A9C800D74DE1 /* AFBImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBImagesViewController.m; sourceTree = "<group>"; };
 		52BC52561E37C95F00D74DE1 /* Strings.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Strings.strings; sourceTree = "<group>"; };
@@ -59,6 +65,10 @@
 				52CC11D41E36A46500C52B01 /* AFBHeadingsViewController.m */,
 				52BC52531E37A9C800D74DE1 /* AFBImagesViewController.h */,
 				52BC52541E37A9C800D74DE1 /* AFBImagesViewController.m */,
+				52197FC01E391CA6005A85D1 /* AFBTextSizeViewController.h */,
+				52197FC11E391CA6005A85D1 /* AFBTextSizeViewController.m */,
+				52197FC31E3944E0005A85D1 /* AFBFieldLabelsViewController.h */,
+				52197FC41E3944E0005A85D1 /* AFBFieldLabelsViewController.m */,
 			);
 			name = "Reference Views";
 			sourceTree = "<group>";
@@ -182,10 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52197FC51E3944E0005A85D1 /* AFBFieldLabelsViewController.m in Sources */,
 				52F7FEE91E365EE600C17147 /* AppDelegate.m in Sources */,
 				52F7FEEC1E365EE600C17147 /* MasterViewController.m in Sources */,
 				52CC11D51E36A46500C52B01 /* AFBHeadingsViewController.m in Sources */,
 				52F7FEE61E365EE600C17147 /* main.m in Sources */,
+				52197FC21E391CA6005A85D1 /* AFBTextSizeViewController.m in Sources */,
 				52BC52551E37A9C800D74DE1 /* AFBImagesViewController.m in Sources */,
 				52F7FEEF1E365EE600C17147 /* DetailViewController.m in Sources */,
 			);

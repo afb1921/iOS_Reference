@@ -20,5 +20,11 @@
 		<key>title</key>
 		<string>Text Size</string>
 	</dict>
+	<dict>
+		<key>segue</key>
+		<string>FieldLabelsViewSegue</string>
+		<key>title</key>
+		<string>Field Labels</string>
+	</dict>
 </array>
 </plist>

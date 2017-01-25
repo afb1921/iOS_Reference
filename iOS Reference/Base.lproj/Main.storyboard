@@ -96,7 +96,7 @@
         <!--Text Size-->
         <scene sceneID="KaB-na-8Bm">
             <objects>
-                <viewController id="s58-7t-rfu" sceneMemberID="viewController">
+                <viewController id="s58-7t-rfu" customClass="AFBTextSizeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2mC-Ox-4Af"/>
                         <viewControllerLayoutGuide type="bottom" id="g6e-R0-40a"/>
@@ -124,10 +124,69 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Text Size" id="fCV-Sg-ij5"/>
+                    <connections>
+                        <outlet property="correctTextSize" destination="ovn-DK-jC8" id="0pK-eb-RBd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJQ-vL-4B3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="708" y="814.54272863568224"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dpc-Pt-7eY">
+            <objects>
+                <navigationController id="jnL-Ze-ga7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="22m-SU-xqq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Tm6-xo-iP2" kind="relationship" relationship="rootViewController" id="x0S-SA-fzk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LAP-9w-MJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="1517"/>
+        </scene>
+        <!--Field Labels-->
+        <scene sceneID="xeK-s6-cXa">
+            <objects>
+                <viewController id="Tm6-xo-iP2" customClass="AFBFieldLabelsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SoO-If-bjt"/>
+                        <viewControllerLayoutGuide type="bottom" id="ljk-nD-7Z8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LgT-0M-85Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Placeholder Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jhK-B1-V2G">
+                                <rect key="frame" x="16" y="72" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Correct Field Label"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Incorrect field label" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uzb-tW-Pj7">
+                                <rect key="frame" x="16" y="110" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Field Labels" id="Y3u-5l-CxP"/>
+                    <connections>
+                        <outlet property="correctTextField" destination="jhK-B1-V2G" id="Sh3-6y-1DN"/>
+                        <outlet property="incorrectTextField" destination="Uzb-tW-Pj7" id="j1W-wX-54W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RU1-4y-5bt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="1515.2923538230887"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -156,11 +215,11 @@
                                 <rect key="frame" x="0.0" y="22" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Arm-wq-HPj">
-                                            <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                             <nil key="textColor"/>
@@ -182,6 +241,7 @@
                         <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="HeadingsViewSegue" id="xTg-a4-6L9"/>
                         <segue destination="yiQ-Q1-tjD" kind="showDetail" identifier="ImagesViewSegue" id="Ih9-qn-mwi"/>
                         <segue destination="Yqc-qY-1eM" kind="showDetail" identifier="TextSizeViewSegue" id="hj1-FS-O2A"/>
+                        <segue destination="jnL-Ze-ga7" kind="showDetail" identifier="FieldLabelsViewSegue" id="YN1-0C-Wta"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
@@ -249,6 +309,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Images" id="bXW-sU-X00"/>
+                    <connections>
+                        <outlet property="correctImage" destination="0Zb-68-bYx" id="pcX-Z7-WeW"/>
+                        <outlet property="incorrectImage" destination="VBU-7I-4y5" id="fLE-5C-GoO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wx-aZ-cqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
