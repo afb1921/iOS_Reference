@@ -26,5 +26,17 @@
 		<key>title</key>
 		<string>Field Labels</string>
 	</dict>
+	<dict>
+		<key>segue</key>
+		<string>ButtonsViewSegue</string>
+		<key>title</key>
+		<string>Buttons</string>
+	</dict>
+	<dict>
+		<key>segue</key>
+		<string>SliderViewSegue</string>
+		<key>title</key>
+		<string>Sliders</string>
+	</dict>
 </array>
 </plist>

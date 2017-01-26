@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AFBHeadingsViewController : UIViewController
+#import "AFBDetailViewController.h"
+@interface AFBHeadingsViewController : AFBDetailViewController
 @property (nonatomic, weak) IBOutlet UILabel *properHeading;
 @end

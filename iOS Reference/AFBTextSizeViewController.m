@@ -16,10 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UISplitViewController *splitView = self.navigationController.splitViewController;
-    if(!splitView.isCollapsed) {
-        self.navigationItem.leftBarButtonItem = splitView.displayModeButtonItem;
-    }
     
     //Set your text to have a font compatible with the Dynamic Type accessibility feature
     [self.correctTextSize setFont:[UIFont preferredFontForTextStyle:UIFontTextStyleBody]];

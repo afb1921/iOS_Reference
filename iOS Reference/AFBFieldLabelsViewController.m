@@ -16,11 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [super viewDidLoad];
-    UISplitViewController *splitView = self.navigationController.splitViewController;
-    if(!splitView.isCollapsed) {
-        self.navigationItem.leftBarButtonItem = splitView.displayModeButtonItem;
-    }
     
     //Enable accessibility for the text field
     [self.correctTextField setIsAccessibilityElement:YES];

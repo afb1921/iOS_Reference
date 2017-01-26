@@ -16,11 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UISplitViewController *splitView = self.navigationController.splitViewController;
-    if(!splitView.isCollapsed) {
-        self.navigationItem.leftBarButtonItem = splitView.displayModeButtonItem;
-    }
-    
+        
     //Enable user interaction for the image so it can be focused by VoiceOver
     [self.correctImage setUserInteractionEnabled:YES];
     

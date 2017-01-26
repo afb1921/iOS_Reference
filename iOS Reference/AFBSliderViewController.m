@@ -1,22 +1,24 @@
 //
-//  HeadingsViewController.m
+//  SliderViewController.m
 //  iOS Reference
 //
-//  Created by John Lilly on 1/23/17.
+//  Created by John Lilly on 1/26/17.
 //  Copyright © 2017 American Foundation for the Blind. All rights reserved.
 //
 
-#import "AFBHeadingsViewController.h"
+#import "AFBSliderViewController.h"
 
-@interface AFBHeadingsViewController ()
+@interface AFBSliderViewController ()
 
 @end
 
-@implementation AFBHeadingsViewController
+@implementation AFBSliderViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [_properHeading setAccessibilityTraits:UIAccessibilityTraitHeader];
+    
+    //Set the accessibility label for the slider control
+    [self.correctSlider setAccessibilityLabel:@"Volume"];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AFBImagesViewController : UIViewController
+#import "AFBDetailViewController.h"
+@interface AFBImagesViewController : AFBDetailViewController
 @property (nonatomic, weak) IBOutlet UIImageView *correctImage;
 @property (nonatomic, weak) IBOutlet UIImageView *incorrectImage;
 @end

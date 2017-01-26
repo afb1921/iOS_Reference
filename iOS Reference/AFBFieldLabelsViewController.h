@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AFBFieldLabelsViewController : UIViewController
+#import "AFBDetailViewController.h"
+@interface AFBFieldLabelsViewController : AFBDetailViewController
 @property (nonatomic, weak) IBOutlet UITextField *correctTextField;
 @property (nonatomic, weak) IBOutlet UITextField *incorrectTextField;
 @end

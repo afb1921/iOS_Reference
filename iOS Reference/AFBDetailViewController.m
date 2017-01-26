@@ -1,22 +1,25 @@
 //
-//  HeadingsViewController.m
+//  AFBDetailViewController.m
 //  iOS Reference
 //
-//  Created by John Lilly on 1/23/17.
+//  Created by John Lilly on 1/26/17.
 //  Copyright © 2017 American Foundation for the Blind. All rights reserved.
 //
 
-#import "AFBHeadingsViewController.h"
+#import "AFBDetailViewController.h"
 
-@interface AFBHeadingsViewController ()
+@interface AFBDetailViewController ()
 
 @end
 
-@implementation AFBHeadingsViewController
+@implementation AFBDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [_properHeading setAccessibilityTraits:UIAccessibilityTraitHeader];
+    UISplitViewController *splitView = self.navigationController.splitViewController;
+    if(!splitView.isCollapsed) {
+        self.navigationItem.leftBarButtonItem = splitView.displayModeButtonItem;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

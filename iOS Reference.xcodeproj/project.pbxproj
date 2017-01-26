@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5210E76D1E3A990F00607D1F /* AFBSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5210E76C1E3A990F00607D1F /* AFBSliderViewController.m */; };
+		5210E7701E3A9AC600607D1F /* AFBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5210E76F1E3A9AC600607D1F /* AFBDetailViewController.m */; };
 		52197FC21E391CA6005A85D1 /* AFBTextSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52197FC11E391CA6005A85D1 /* AFBTextSizeViewController.m */; };
 		52197FC51E3944E0005A85D1 /* AFBFieldLabelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52197FC41E3944E0005A85D1 /* AFBFieldLabelsViewController.m */; };
+		52197FC81E3A7A55005A85D1 /* AFBButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52197FC71E3A7A55005A85D1 /* AFBButtonsViewController.m */; };
 		52BC52551E37A9C800D74DE1 /* AFBImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BC52541E37A9C800D74DE1 /* AFBImagesViewController.m */; };
 		52BC52571E37C95F00D74DE1 /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52BC52561E37C95F00D74DE1 /* Strings.strings */; };
 		52CC11D51E36A46500C52B01 /* AFBHeadingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC11D41E36A46500C52B01 /* AFBHeadingsViewController.m */; };
@@ -23,10 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5210E76B1E3A990F00607D1F /* AFBSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBSliderViewController.h; sourceTree = "<group>"; };
+		5210E76C1E3A990F00607D1F /* AFBSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBSliderViewController.m; sourceTree = "<group>"; };
+		5210E76E1E3A9AC600607D1F /* AFBDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBDetailViewController.h; sourceTree = "<group>"; };
+		5210E76F1E3A9AC600607D1F /* AFBDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBDetailViewController.m; sourceTree = "<group>"; };
 		52197FC01E391CA6005A85D1 /* AFBTextSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBTextSizeViewController.h; sourceTree = "<group>"; };
 		52197FC11E391CA6005A85D1 /* AFBTextSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBTextSizeViewController.m; sourceTree = "<group>"; };
 		52197FC31E3944E0005A85D1 /* AFBFieldLabelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBFieldLabelsViewController.h; sourceTree = "<group>"; };
 		52197FC41E3944E0005A85D1 /* AFBFieldLabelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBFieldLabelsViewController.m; sourceTree = "<group>"; };
+		52197FC61E3A7A55005A85D1 /* AFBButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBButtonsViewController.h; sourceTree = "<group>"; };
+		52197FC71E3A7A55005A85D1 /* AFBButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBButtonsViewController.m; sourceTree = "<group>"; };
 		52BC52531E37A9C800D74DE1 /* AFBImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBImagesViewController.h; sourceTree = "<group>"; };
 		52BC52541E37A9C800D74DE1 /* AFBImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBImagesViewController.m; sourceTree = "<group>"; };
 		52BC52561E37C95F00D74DE1 /* Strings.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Strings.strings; sourceTree = "<group>"; };
@@ -69,6 +78,10 @@
 				52197FC11E391CA6005A85D1 /* AFBTextSizeViewController.m */,
 				52197FC31E3944E0005A85D1 /* AFBFieldLabelsViewController.h */,
 				52197FC41E3944E0005A85D1 /* AFBFieldLabelsViewController.m */,
+				52197FC61E3A7A55005A85D1 /* AFBButtonsViewController.h */,
+				52197FC71E3A7A55005A85D1 /* AFBButtonsViewController.m */,
+				5210E76B1E3A990F00607D1F /* AFBSliderViewController.h */,
+				5210E76C1E3A990F00607D1F /* AFBSliderViewController.m */,
 			);
 			name = "Reference Views";
 			sourceTree = "<group>";
@@ -106,6 +119,8 @@
 				52F7FEE41E365EE600C17147 /* Supporting Files */,
 				52F7FEFE1E367F5800C17147 /* ReferenceItems.plist */,
 				52BC52561E37C95F00D74DE1 /* Strings.strings */,
+				5210E76E1E3A9AC600607D1F /* AFBDetailViewController.h */,
+				5210E76F1E3A9AC600607D1F /* AFBDetailViewController.m */,
 			);
 			path = "iOS Reference";
 			sourceTree = "<group>";
@@ -192,10 +207,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52197FC81E3A7A55005A85D1 /* AFBButtonsViewController.m in Sources */,
 				52197FC51E3944E0005A85D1 /* AFBFieldLabelsViewController.m in Sources */,
+				5210E7701E3A9AC600607D1F /* AFBDetailViewController.m in Sources */,
 				52F7FEE91E365EE600C17147 /* AppDelegate.m in Sources */,
 				52F7FEEC1E365EE600C17147 /* MasterViewController.m in Sources */,
 				52CC11D51E36A46500C52B01 /* AFBHeadingsViewController.m in Sources */,
+				5210E76D1E3A990F00607D1F /* AFBSliderViewController.m in Sources */,
 				52F7FEE61E365EE600C17147 /* main.m in Sources */,
 				52197FC21E391CA6005A85D1 /* AFBTextSizeViewController.m in Sources */,
 				52BC52551E37A9C800D74DE1 /* AFBImagesViewController.m in Sources */,

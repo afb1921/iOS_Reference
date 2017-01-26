@@ -23,7 +23,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-38" y="-630"/>
+            <point key="canvasLocation" x="-47" y="-630"/>
         </scene>
         <!--Headings-->
         <scene sceneID="Dv9-64-Oz7">
@@ -40,6 +40,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Proper Heading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGV-40-U2c">
                                 <rect key="frame" x="16" y="141" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,7 +54,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here is an example of text that looks like a heading, but does not include a heading accessibility trait." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50D-ai-EUb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here is an example of text that is styled like a heading, but does not include a heading accessibility trait." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50D-ai-EUb">
                                 <rect key="frame" x="16" y="170" width="343" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -91,7 +94,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q4p-6U-s6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-46" y="816"/>
+            <point key="canvasLocation" x="-47" y="815"/>
         </scene>
         <!--Text Size-->
         <scene sceneID="KaB-na-8Bm">
@@ -188,6 +191,138 @@
             </objects>
             <point key="canvasLocation" x="708" y="1515.2923538230887"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FxH-eT-BqK">
+            <objects>
+                <navigationController id="r3P-sT-hzu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mOD-gA-feP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kgV-J5-dAr" kind="relationship" relationship="rootViewController" id="LSp-Nd-h0i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3uk-QQ-dDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="2193"/>
+        </scene>
+        <!--Buttons-->
+        <scene sceneID="Zgc-fv-Xtw">
+            <objects>
+                <viewController id="kgV-J5-dAr" customClass="AFBButtonsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="42a-v8-a57"/>
+                        <viewControllerLayoutGuide type="bottom" id="WH5-pA-TBN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZRz-G6-ZSE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qeo-WQ-GVI">
+                                <rect key="frame" x="16" y="72" width="343" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Buttons that are labeled with text usually don't pose any problems, but buttons that are created with images have no text for VoiceOver to pick up on. Here is a button that uses an image and has text entered into the accessibility label for VoiceOver users. </string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knZ-A8-WDt">
+                                <rect key="frame" x="27" y="236" width="320" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Available on the App Store"/>
+                                <state key="normal" image="App store image"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here is an example of the same button without the accessiblity label." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DST-gc-7Wk">
+                                <rect key="frame" x="16" y="353" width="343" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KU-BM-Etp">
+                                <rect key="frame" x="27" y="406" width="320" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="App store image"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Buttons" id="TBb-u1-i3m"/>
+                    <connections>
+                        <outlet property="correctButton" destination="knZ-A8-WDt" id="6KH-II-w1b"/>
+                        <outlet property="incorrectButton" destination="1KU-BM-Etp" id="dR1-2V-WS1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uvp-VO-PKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="2192.6536731634183"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tbr-Mr-qLZ">
+            <objects>
+                <navigationController id="vm8-V1-azs" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fI9-hc-OCx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BOC-Wt-uP6" kind="relationship" relationship="rootViewController" id="JEr-yz-o8I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Qh-eB-bpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="2883"/>
+        </scene>
+        <!--Sliders-->
+        <scene sceneID="oLN-8y-Ab7">
+            <objects>
+                <viewController id="BOC-Wt-uP6" customClass="AFBSliderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9fw-UM-9Wh"/>
+                        <viewControllerLayoutGuide type="bottom" id="U5L-Vt-ezv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e0x-JR-TMv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07c-RJ-bfE">
+                                <rect key="frame" x="16" y="72" width="343" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Here is a slider control. This control allows users to select a single value from a range of values. The default control is accessible with VoiceOver and only needs an accessibility label to give VoiceOver users information on what the slider controls. This control could be tied to something like volume.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here is an example of a slider without an accessibility label." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H04-GZ-fOo">
+                                <rect key="frame" x="16" y="300" width="343" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="o83-uO-dWu">
+                                <rect key="frame" x="14" y="356" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WGH-RJ-fFh">
+                                <rect key="frame" x="14" y="262" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Volume"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sliders" id="Q5b-Qw-FRB"/>
+                    <connections>
+                        <outlet property="correctSlider" destination="WGH-RJ-fFh" id="WhE-uG-WTg"/>
+                        <outlet property="incorrectSlider" destination="o83-uO-dWu" id="uGF-KU-4e2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lq7-da-1uM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="2882.608695652174"/>
+        </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
@@ -242,6 +377,8 @@
                         <segue destination="yiQ-Q1-tjD" kind="showDetail" identifier="ImagesViewSegue" id="Ih9-qn-mwi"/>
                         <segue destination="Yqc-qY-1eM" kind="showDetail" identifier="TextSizeViewSegue" id="hj1-FS-O2A"/>
                         <segue destination="jnL-Ze-ga7" kind="showDetail" identifier="FieldLabelsViewSegue" id="YN1-0C-Wta"/>
+                        <segue destination="r3P-sT-hzu" kind="showDetail" identifier="ButtonsViewSegue" id="AZt-aW-bhs"/>
+                        <segue destination="vm8-V1-azs" kind="showDetail" identifier="SliderViewSegue" id="RX6-Ro-Ix1"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
@@ -333,11 +470,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-UC-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="129"/>
+            <point key="canvasLocation" x="-47" y="127"/>
         </scene>
     </scenes>
     <resources>
         <image name="AFB Image" width="200" height="200"/>
+        <image name="App store image" width="320" height="95"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xTg-a4-6L9"/>
