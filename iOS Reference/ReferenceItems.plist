@@ -33,10 +33,18 @@
 		<string>Buttons</string>
 	</dict>
 	<dict>
+		<key>New item</key>
+		<string></string>
 		<key>segue</key>
 		<string>SliderViewSegue</string>
 		<key>title</key>
 		<string>Sliders</string>
+	</dict>
+	<dict>
+		<key>segue</key>
+		<string>SwitchesViewSegue</string>
+		<key>title</key>
+		<string>Switches</string>
 	</dict>
 </array>
 </plist>

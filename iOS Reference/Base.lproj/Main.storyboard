@@ -323,6 +323,82 @@
             </objects>
             <point key="canvasLocation" x="708" y="2882.608695652174"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2FW-hp-h7w">
+            <objects>
+                <navigationController id="9E0-cF-yNd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6vI-pj-F27">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zAa-ay-alb" kind="relationship" relationship="rootViewController" id="1ef-db-6gi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Wf-Tn-FB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="3583"/>
+        </scene>
+        <!--Switches-->
+        <scene sceneID="xCB-Hj-OFG">
+            <objects>
+                <viewController id="zAa-ay-alb" customClass="AFBSwitchesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ofy-pf-8wf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wh0-Po-6U9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EOa-kM-Fir">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Labeled Correctly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZA1-Ho-FP2">
+                                <rect key="frame" x="16" y="77" width="137" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBa-uP-wxg">
+                                <rect key="frame" x="310" y="72" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Labeled Correctly">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2K3-eQ-1rt">
+                                <rect key="frame" x="310" y="111" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Labeled Incorrectly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXw-CR-PeN">
+                                <rect key="frame" x="16" y="116" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="NO"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Switches" id="xhA-B8-NUn"/>
+                    <connections>
+                        <outlet property="correctLabel" destination="ZA1-Ho-FP2" id="U1L-fN-Giw"/>
+                        <outlet property="correctSwitch" destination="eBa-uP-wxg" id="7gr-uW-DAc"/>
+                        <outlet property="incorrectLabel" destination="uXw-CR-PeN" id="WbK-Lh-PXC"/>
+                        <outlet property="incorrectSwitch" destination="2K3-eQ-1rt" id="0Ff-Dv-gmb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yNV-PJ-W0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="3582.4587706146931"/>
+        </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
@@ -379,6 +455,7 @@
                         <segue destination="jnL-Ze-ga7" kind="showDetail" identifier="FieldLabelsViewSegue" id="YN1-0C-Wta"/>
                         <segue destination="r3P-sT-hzu" kind="showDetail" identifier="ButtonsViewSegue" id="AZt-aW-bhs"/>
                         <segue destination="vm8-V1-azs" kind="showDetail" identifier="SliderViewSegue" id="RX6-Ro-Ix1"/>
+                        <segue destination="9E0-cF-yNd" kind="showDetail" identifier="SwitchesViewSegue" id="AKn-4o-bm9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
