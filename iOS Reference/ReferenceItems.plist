@@ -46,5 +46,11 @@
 		<key>title</key>
 		<string>Switches</string>
 	</dict>
+	<dict>
+		<key>segue</key>
+		<string>StatusControlViewSegue</string>
+		<key>title</key>
+		<string>Status Control</string>
+	</dict>
 </array>
 </plist>

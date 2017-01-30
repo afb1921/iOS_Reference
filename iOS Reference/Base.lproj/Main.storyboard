@@ -377,7 +377,7 @@
                                 <rect key="frame" x="16" y="116" width="147" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="NO"/>
+                                    <accessibilityTraits key="traits" staticText="YES"/>
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -398,6 +398,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yNV-PJ-W0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="708" y="3582.4587706146931"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AzU-i2-rVk">
+            <objects>
+                <navigationController id="w76-JA-Uib" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xqe-jF-e7S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bbn-mZ-G3n" kind="relationship" relationship="rootViewController" id="K4k-U4-GNP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HdP-Ib-jNq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="4262"/>
+        </scene>
+        <!--Status Control-->
+        <scene sceneID="Muu-oS-RX1">
+            <objects>
+                <viewController id="bbn-mZ-G3n" customClass="AFBStatusControlViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mep-FL-yda"/>
+                        <viewControllerLayoutGuide type="bottom" id="KcO-G9-ifh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AJD-1o-n8F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcS-Vw-5Pl">
+                                <rect key="frame" x="16" y="72" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="start:" destination="bbn-mZ-G3n" eventType="touchUpInside" id="C79-ag-F2i"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="71d-eZ-DVK">
+                                <rect key="frame" x="16" y="110" width="343" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Status Control" id="XvP-tO-ewP"/>
+                    <connections>
+                        <outlet property="button" destination="mcS-Vw-5Pl" id="j23-Ag-AQ4"/>
+                        <outlet property="progressView" destination="71d-eZ-DVK" id="KAh-4o-h1I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="npw-ll-6uo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="4261.6191904047982"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -456,6 +509,7 @@
                         <segue destination="r3P-sT-hzu" kind="showDetail" identifier="ButtonsViewSegue" id="AZt-aW-bhs"/>
                         <segue destination="vm8-V1-azs" kind="showDetail" identifier="SliderViewSegue" id="RX6-Ro-Ix1"/>
                         <segue destination="9E0-cF-yNd" kind="showDetail" identifier="SwitchesViewSegue" id="AKn-4o-bm9"/>
+                        <segue destination="w76-JA-Uib" kind="showDetail" identifier="StatusControlViewSegue" id="K7o-tc-o1L"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
