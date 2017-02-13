@@ -27,6 +27,7 @@
 		52F7FEF41E365EE600C17147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F7FEF31E365EE600C17147 /* Assets.xcassets */; };
 		52F7FEF71E365EE600C17147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F7FEF51E365EE600C17147 /* LaunchScreen.storyboard */; };
 		52F7FEFF1E367F5800C17147 /* ReferenceItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52F7FEFE1E367F5800C17147 /* ReferenceItems.plist */; };
+		70D8586C1E522B970032F673 /* Tab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D8586B1E522B970032F673 /* Tab.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		52F7FEF61E365EE600C17147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52F7FEF81E365EE600C17147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52F7FEFE1E367F5800C17147 /* ReferenceItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ReferenceItems.plist; sourceTree = "<group>"; };
+		70D8586B1E522B970032F673 /* Tab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tab.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				52BC52561E37C95F00D74DE1 /* Strings.strings */,
 				5210E76E1E3A9AC600607D1F /* AFBDetailViewController.h */,
 				5210E76F1E3A9AC600607D1F /* AFBDetailViewController.m */,
+				70D8586B1E522B970032F673 /* Tab.storyboard */,
 			);
 			path = "iOS Reference";
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				52F7FEF41E365EE600C17147 /* Assets.xcassets in Resources */,
 				52F7FEF21E365EE600C17147 /* Main.storyboard in Resources */,
 				52BC52571E37C95F00D74DE1 /* Strings.strings in Resources */,
+				70D8586C1E522B970032F673 /* Tab.storyboard in Resources */,
 				52F7FEFF1E367F5800C17147 /* ReferenceItems.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
