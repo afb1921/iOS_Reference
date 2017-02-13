@@ -52,5 +52,11 @@
 		<key>title</key>
 		<string>Status Control</string>
 	</dict>
+	<dict>
+		<key>segue</key>
+		<string>AlertDialogViewSegue</string>
+		<key>title</key>
+		<string>Alert Dialog</string>
+	</dict>
 </array>
 </plist>

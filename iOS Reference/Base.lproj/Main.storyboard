@@ -452,6 +452,41 @@
             </objects>
             <point key="canvasLocation" x="708" y="4261.6191904047982"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wjm-6W-f1B">
+            <objects>
+                <navigationController id="ICH-dO-C6c" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D3t-Mr-oej">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ce2-aN-egl" kind="relationship" relationship="rootViewController" id="x6r-Nq-oEk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SM6-6o-xRX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="4953"/>
+        </scene>
+        <!--Alert Dialog-->
+        <scene sceneID="PmE-D5-6em">
+            <objects>
+                <viewController id="Ce2-aN-egl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MYx-Fc-52h"/>
+                        <viewControllerLayoutGuide type="bottom" id="if9-pD-BfR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VlK-xl-Xrz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Alert Dialog" id="nqp-00-5p5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XSX-nR-84R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="4952"/>
+        </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
@@ -479,11 +514,11 @@
                                 <rect key="frame" x="0.0" y="22" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Arm-wq-HPj">
-                                            <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                             <nil key="textColor"/>
@@ -510,6 +545,7 @@
                         <segue destination="vm8-V1-azs" kind="showDetail" identifier="SliderViewSegue" id="RX6-Ro-Ix1"/>
                         <segue destination="9E0-cF-yNd" kind="showDetail" identifier="SwitchesViewSegue" id="AKn-4o-bm9"/>
                         <segue destination="w76-JA-Uib" kind="showDetail" identifier="StatusControlViewSegue" id="K7o-tc-o1L"/>
+                        <segue destination="ICH-dO-C6c" kind="showDetail" id="mzy-es-Icc"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
