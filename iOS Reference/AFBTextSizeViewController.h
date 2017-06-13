@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AFBDetailViewController.h"
+#import "UILabel+FontFamilyLabel.h"
 @interface AFBTextSizeViewController : AFBDetailViewController
 @property (nonatomic, weak) IBOutlet UILabel *correctTextSize;
 @end

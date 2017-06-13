@@ -23,6 +23,9 @@
     //Give the image button an accessibility label
     [self.correctButton setAccessibilityLabel:@"Available on the App Store"];
     
+    //Assign a custom hint
+    [self.correctButton setAccessibilityHint:@"Double tap to add a city"];
+    
     //Set an image on the incorrect button for demonstration purposes but don't give an accessiblity label
     [self.incorrectButton setImage:[UIImage imageNamed:@"App store image"] forState:UIControlStateNormal];
 }

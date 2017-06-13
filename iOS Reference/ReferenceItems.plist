@@ -58,5 +58,17 @@
 		<key>title</key>
 		<string>Alert Dialog</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>Focus Order</string>
+		<key>segue</key>
+		<string>FocusOrderViewSegue</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Pickers</string>
+		<key>segue</key>
+		<string>PickersViewSegue</string>
+	</dict>
 </array>
 </plist>

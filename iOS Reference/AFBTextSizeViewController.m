@@ -8,6 +8,7 @@
 
 #import "AFBTextSizeViewController.h"
 
+
 @interface AFBTextSizeViewController ()
 
 @end
@@ -26,6 +27,31 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(updateTextSizeNotification:)
+                                                 name:UIContentSizeCategoryDidChangeNotification
+                                               object:nil];
+}
+- (void)updateTextSizeNotification: (NSNotification *)notification{
+    
+    // Update the font to apply the new text size
+//    self.correctTextSize.font.familyName
+//    UILabel.appearance.fontFamily = @"Papyrus";
+//    self.correctTextSize.adjustsFontForContentSizeCategory = YES;
+    // Similarly, updating a UIButton's size for a given style:
+    //[self.button.titleLabel setFont:[UIFont preferredFontForTextStyle:UIFontTextStyleBody]];
+    UIFont* newFont = [UIFont preferredFontForTextStyle:UIFontTextStyleBody compatibleWithTraitCollection:nil];
+    NSDictionary* weight = [newFont.fontDescriptor objectForKey:UIFontDescriptorTraitsAttribute];
+    NSDictionary* attributes = @{UIFontWeightTrait: weight};
+    self.correctTextSize.font = [UIFont fontWithDescriptor: [self.correctTextSize.font.fontDescriptor fontDescriptorByAddingAttributes:attributes] size:newFont.pointSize];
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 /*
 #pragma mark - Navigation
 

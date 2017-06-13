@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //set an accessibility label for the progress bar
+    [self.button setAccessibilityHint:@"Double tap to start. Double tap and hold to stop"];
     [self.progressView setAccessibilityLabel:@"Correct Progress Label"];
     
 }
